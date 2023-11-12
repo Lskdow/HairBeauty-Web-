@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <style>
+        body{
+            background-color: #A9D0F5;
+            overflow: auto;
+            height: 100%;
+
+        }
+     
+    </style>
+    <link href="ui_main.css" rel="stylesheet">
+</head>
+<body>
+    <section id = "wrap">
+        <h1>컷트커트</h1>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="Find.html" target="_blank">미용실 찾기</a></li>
+                    <li><a href="Man.html" target="_blank">미용 시술</a></li>
+                    <li><a href="Knowlegde.html" target="_blank">잡학지식</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id ="container">
+            <section id ="m1" class="content" onclick="window.open('Find.html')">
+                <div class="conbox"></div>
+            </section>
+            <section id ="m2" class="content" onclick="window.open('Man.html')">
+                <div class="conbox"></div>
+            </section>
+            <section id ="m3" class="content" onclick="window.open('Knowlegde.html')">
+                <div class="conbox"></div>
+            </section>
+        </section>
+        <footer></footer>
+    </section>
+</body>
+</html>
+
+<script>
+    function find(){
+        alert('테스트');
+    }
+</script>

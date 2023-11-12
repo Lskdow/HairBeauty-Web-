@@ -1,0 +1,110 @@
+/*폰트*/
+@font-face {
+    font-family: 'melona';
+    src: url("/Font/BinggraeMelona-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'nexon';
+    src: url("/Font/NEXEN\ TIRE_Regular.ttf")  format('truetype');
+}
+
+#wrap > h1{font-size: 0;}
+#wrap > h2 {font-size: 80px;}
+
+
+
+
+/*네비 헤더*/
+#wrap header nav{width: 100%; height: 40%; padding-top: 0px; }
+#wrap header nav ul{width: 100%; height: fit-content; 
+    display: flex; 
+    position: absolute;
+    float: left; 
+    justify-content:start; 
+    list-style: none;
+    background-color: #A9D0F5}
+#wrap header nav ul li{margin-right: 100px;}
+#wrap header nav ul li a {font-family: 'melona'; font-size: 20px; color:white; 
+    font-weight: 100; line-height: 30px;
+    text-decoration-line: none;}
+#wrap header nav ul li:hover a, 
+#wrap header nav ul li.on a{color : #819FF7;}
+#wrap header nav ul li:hover:after,
+#wrap header nav ul li.on:after{background-color: #819FF7;}
+
+
+
+
+
+
+/*아코디언 박스*/
+.accordio{margin-top: 100px; margin:0 auto method;}
+.accordio ol li {width: 98%; background: white; border-top: 4px solid #A9D0F5;}
+.accordio ol li h2{display: block; padding: 0px 20px 20px 0; 
+    margin: 20px 20px 0px 30px;
+    cursor: pointer; 
+    font-family: 'nexon'; font-weight: 300; color:  #81BEF7;}
+
+.accordio ol li button{
+    display: inline;
+    text-align: left;
+    width: 100%;
+    border: 0;
+    background-color: transparent;
+
+}
+
+
+.accordio ol li h2 span{display: inline-block; margin-right: 10px; 
+    font-family:'nexon'; font-weight: 1000; color: #819FF7;}
+
+.accordio ol li p{height: 0; visibility: hidden; opacity: 0;}
+
+.accordio ol li.on p{height: auto; padding: 30px 100px 70px 200px;
+    font-family: 'melona'; font-size: 20px; color: #0B243B;
+    background-color : #EFF8FB;
+    background-repeat: no-repeat;
+    visibility: visible; opacity: 1;}
+
+.accordio ol li:nth-of-type(1) p{
+    background-image:url(/img/salon.png);
+    background-size: 150px;
+    background-position: 40px 20px;}
+
+.accordio ol li:nth-of-type(2) p{
+    background-image:url(/img/3light.png);
+    background-size: 100px;
+    background-position: 40px 20px;}
+
+.accordio ol li:nth-of-type(7) p{
+    background-image:url(/img/cut.png);
+    background-size: 120px;
+    background-position: 40px 20px;}
+
+
+/*추가 네비 바*/
+#sub{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#sub > li {
+    display: inline;
+}
+
+#main > li:hover #sub{
+    background-color: #A9BCF5;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    visibility: visible;
+}
+
+#main > li:hover #sub > li > a{
+    color: white;
+}
+
+#main > li:hover #sub > li:hover a{
+    color:  #819FF7;
+}

@@ -1,0 +1,54 @@
+/*폰트*/
+@font-face {
+    font-family: 'melona';
+    src: url("/Font/BinggraeMelona-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'nexon';
+    src: url("/Font/NEXEN\ TIRE_Regular.ttf")  format('truetype');
+}
+
+#wrap > h1{font-size: 0;}
+#wrap > h2 {font-size: 80px;}
+
+
+#wrap{width: 1000px; height: 100%; padding-left:180px; margin-top: 0px;}
+
+
+/*네비 헤더*/
+#wrap header{width: 300px; height:100%;
+    position: fixed; left:0px; top:0px;}
+
+#wrap header nav{width: 300px; height: 1000px;}
+#wrap header nav ul{width: 300px; height: 1000px; display: flex; 
+    flex-direction: column; justify-content:center; 
+    list-style: none;
+    background-color: #A9D0F5}
+#wrap header nav ul li{margin-left:40px; margin-bottom: 60px}
+#wrap header nav ul li a{font-family: 'melona'; font-size: 30px; color:white; 
+    font-weight: 100; line-height: 30px;
+    text-decoration-line: none;}
+#wrap header nav ul li:hover a, 
+#wrap header nav ul li.on a{color : #819FF7;}
+#wrap header nav ul li:hover:after,
+#wrap header nav ul li.on:after{background-color: #819FF7;}
+    
+
+/*컨테이너*/
+#wrap #container{justify-content: center;}
+#container {width: 3000px; height: 1000px; position: fixed; 
+    max-width: 1200px; margin-top: 10px; padding-left:130px auto; justify-content: center;}
+#container .content{width: 34%; height:100%; position: fixed; }
+#container #m1{left:300px; width:500px; height :1000px; background:url(/img/back_1.png) repeat;}
+#container #m2{left:800px; width:500px; height:1000px; background:url(/img/back_2.png) repeat;}
+#container #m3{left:1300px; width:500px; height:1000px; background:url(/img/back_3.png) repeat; }
+
+#container #m1:hover{background:url(/img/backC_1.png) repeat;}
+#container #m2:hover{background:url(/img/backC_2.png) repeat;}
+#container #m3:hover{background:url(/img/backC_3.png) repeat;}
+
+#container .content:after{left: 30px; top:150px; position: absolute;
+    font-family: 'melona'; font-size: 60px; font-weight: 700; color:#FFFFFF;}
+#container #m1:after{content:"미용실 찾기"}
+#container #m2:after{content:"미용 시술"}
+#container #m3:after{content:"잡학지식"}

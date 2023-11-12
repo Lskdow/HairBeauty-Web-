@@ -1,0 +1,73 @@
+/*폰트*/
+@font-face {
+    font-family: 'melona';
+    src: url("/Font/BinggraeMelona-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'nexon';
+    src: url("/Font/NEXEN\ TIRE_Regular.ttf")  format('truetype');
+}
+
+#wrap > h1{font-size: 0;}
+#wrap > h2 {font-size: 80px;}
+
+
+
+
+/*네비 헤더*/
+#wrap header nav{width: 100%; height: 40%; padding-top: 0px; }
+#wrap header nav ul{width: 100%; height: fit-content; 
+    display: flex; 
+    position: absolute;
+    float: left; 
+    justify-content:start; 
+    list-style: none;
+    background-color: #A9D0F5}
+#wrap header nav ul li{margin-right: 100px;}
+#wrap header nav ul li a {font-family: 'melona'; font-size: 20px; color:white; 
+    font-weight: 100; line-height: 30px;
+    text-align: center;
+    text-decoration-line: none;}
+#wrap header nav ul li:hover a, 
+#wrap header nav ul li.on a{color : #819FF7;}
+#wrap header nav ul li:hover:after,
+#wrap header nav ul li.on:after{background-color: #819FF7;}
+
+
+/*네비 바*/
+#sub{
+    width: min-content;
+    height: 40px;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#sub > li {
+    display: inline;
+}
+
+#main > li:hover #sub{
+    background-color: #A9BCF5;
+    width: 100%;
+    text-align: center;
+    opacity: 1;
+    visibility: visible;
+}
+
+#main > li:hover #sub > li > a{
+    color: white;
+}
+
+#main > li:hover #sub > li:hover a{
+    color:  #819FF7;
+}
+
+
+.center{
+    margin-top: 80px;
+}
+
+
+
+

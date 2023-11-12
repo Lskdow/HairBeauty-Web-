@@ -1,0 +1,67 @@
+/*폰트*/
+@font-face {
+    font-family: 'melona';
+    src: url("/Font/BinggraeMelona-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'nexon';
+    src: url("/Font/NEXEN\ TIRE_Regular.ttf")  format('truetype');
+}
+
+
+body{
+    background-color: #EFF8FB;
+    overflow: auto;
+    overflow-x: hidden;
+    height: 100%;
+ }
+
+
+
+#data{
+    list-style: none;
+    flex-direction: column;
+
+}
+
+#wrap {
+    display: center;
+    padding-top: 5px;
+    width: max-content;
+}
+
+#wrap h1{
+    font-family: 'nexon';
+    display: center;
+    font-size: 40px;
+    padding-left: 37px;
+    color: #045FB4;
+    
+}
+
+#wrap ul{
+    padding-top: 5px;
+}
+
+#wrap li{font-family: 'nexon'; 
+    font-size: 24px; 
+    font-weight: 100; line-height: 30px;
+    width: 600px;
+
+}
+#wrap h3{
+    color: #81BEF7;
+}
+#wrap a{
+    text-decoration-line: none;
+    color: #01A9DB;
+}
+
+
+
+#wrap small {
+    font-family: 'melona';
+    font-size: 22px;
+    color : #2E2E2E;
+}
+

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미용실 찾기</title>
+    <style>
+        body{
+            background-color: #E0F2F7;
+            overflow: auto;
+            overflow-x: hidden;
+            height: 100%;
+        }
+        div{
+            width: 100%;
+            height: 1000px;
+        }
+
+        div.center{
+            width: 100%;
+            float: center;
+            box-sizing: border-box;
+            text-align: center;
+
+        }
+        /* div.right{
+            width: 30%;
+            float:right;
+            box-sizing: border-box;
+            background-color: white;
+        } */
+        div.left #Ganghwa:hover{
+            color: black;
+
+        }
+
+
+    </style>
+    <link href="ui_find.css" rel="stylesheet">
+</head>
+<body>
+    <section id = "wrap">
+        <h1>미용실</h1>
+        <header>
+            <!--<strong class = "logo"><img src="/img/logo2.png" alt="컷트커트"></strong>-->
+            <nav>
+                <ul id = main>
+                    <li><a href="Main.html" target="">메인</a></li>
+                    <li><a href="Find.html" target="_blank">미용실 찾기</a></li>
+                    <li><a href="Man.html" target="_blank">미용 시술</a>
+                        <ul id="sub">
+                            <li><a href="Man.html">남성 커트</a></li>
+                            <li><a href="Woman.html">여성 커트</a></li>
+                            <li><a href="Etc.html">기타</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="knowlegde.html" target="_blank">잡학지식</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div>
+            <div class = "center" id="center">
+                <img src="/img/Incheon_color.png" usemap="#Incheon">
+
+                <map name="Incheon">
+                    <!--강화군-->
+                    <area target="" alt="" title="Ganghwa" href=""
+                    coords="126,46,160,37,249,105,276,164,264,200,276,222,269,264,279,318,296,358,276,383,225,376,138,394,108,370,103,332,145,312,143,271,76,221,79,93,111,73" 
+                    shape="poly"
+                    id="Ganghwa"
+                    class="btn"
+                    onclick="GanghwaClick()">
+
+                    <!--중구-->
+                    <area onmouseover="" alt="" title="Jung" href="" 
+                    coords="119,643,146,682,173,680,222,724,304,673,308,663,412,619,448,590,419,552,378,545,351,518,320,518,315,566,284,580,202,584" 
+                    shape="poly"
+                    id="Jung"
+                    onclick="JungClick()">
+                    <area target="" alt="" title="" href="" 
+                    coords="499,608,472,627,464,663,476,695,496,713,521,706,518,664,538,642" 
+                    shape="poly"
+                    id="Jung"
+                    class="btn"
+                    onclick="JungClick()">
+
+                    <!--옹진군-->
+                    <area target="" alt="" title="" href="" 
+                    coords="106,808,164,808,177,856,156,868,144,885,144,905,128,908,121,922,103,932,96,914,81,911,61,925,61,892,87,873,69,842" 
+                    shape="poly"
+                    id="Ongjin"
+                    onclick="OngjinClick()">
+                    
+                    <!--동구-->
+                    <area target="" alt="" title="" href="" 
+                    coords="500,583,523,573,557,602,556,634,536,633,501,605" 
+                    shape="poly"
+                    id="Dong"
+                    onclick="DongClick()">
+                    
+                    <!--연수구-->
+                    <area target="" alt="" title="" href="" 
+                    coords="499,723,496,798,571,861,623,803,578,784,636,719,636,694" 
+                    shape="poly"
+                    id="Yeonsu"
+                    onclick="YeonsuClick()">
+                    
+                    <!--남동구-->
+                    <area target="" alt="" title="" href="" 
+                    coords="612,638,625,659,624,679,641,688,643,719,585,786,660,796,707,744,712,720,736,712,737,679,751,665,748,634,693,644,655,625,638,642" 
+                    shape="poly"
+                    id="Namdong"
+                    onclick="NamdongClick()">
+                    
+                    <!--부평구-->
+                    <area target="" alt="" title="" href="" 
+                    coords="616,533,608,544,629,599,612,625,641,636,650,617,697,640,741,631,698,601,697,558,720,532" 
+                    shape="poly"
+                    id="Bupyeong"
+                    onclick="BupyeongClick()">
+                    
+                    <!--계양구-->
+                    <area target="" alt="" title="" href="" 
+                    coords="626,427,652,428,669,397,754,429,718,523,616,528,614,516,622,501,638,497,647,472,638,459" 
+                    shape="poly"
+                    id="Gyeyang"
+                    onclick="GyeyangClick()">
+
+                    
+                    <!--미추홀구-->
+                    <area target="" alt="" title="" href="" 
+                    coords="563,609,557,644,525,666,531,708,631,690,620,683,616,657,607,633" 
+                    shape="poly"
+                    id="Michu"
+                    onclick="MichuClick()">
+
+                    
+                    <!--서구-->
+                    <area target="" alt="" title="" href="" 
+                    coords="553,304,514,370,496,373,468,391,472,410,527,422,517,441,466,445,482,580,526,565,548,591,599,621,623,598,596,537,617,500,633,489,637,473,628,461,622,434,608,422,645,420,662,391" 
+                    shape="poly"
+                    id="Seo"
+                    onclick="SeoClick()">
+
+                
+                
+                
+                </map>
+            </div>
+      
+        </div>
+
+        <script>
+            //새로고침 페이지 위치 고정
+            window.onload = function(){
+                setTimeout(function(){
+                    scrollTo(0, 0);
+                }, 100);
+            }
+
+
+
+            //팝업
+            function GanghwaClick(){
+                window.open('Ganghwa.html', 'Ganghwa', 
+                'width=570, height=800, location=left, status=no, scrollbars=yes, top=150px, left=1000px');
+                
+            }
+            function BupyeongClick(){
+                window.open('Bupyeong.html', 'Bupyeong', 
+                'width=570, height=800, location=left, status=no, scrollbars=yes, top=150px, left=1000px');
+            }
+            function DongClick(){
+                window.open('Dong.html', 'Dong', 
+                'width=570, height=800, location=left, status=no, scrollbars=yes, top=150px, left=1000px');
+            }
+            function GyeyangClick(){
+                window.open('Gyeyang.html', 'Gyeyang', 
+                'width=570, height=800, location=left, status=no, scrollbars=yes, top=150px, left=1000px');
+            }
+            function JungClick(){
+                window.open('Jung.html', 'Jung', 
+                'width=570, height=800, location=left, status=no, scrollbars=yes, top=150px, left=1000px');
+                window.resizeTo(550, 800);
+            }
+            function MichuClick(){
+                window.open('Michu.html', 'Michu', 
+                'width=570, height=800, location=left, status=no, scrollbars=yes, top=150px, left=1000px');
+            }
+            function NamdongClick(){
+                window.open('Namdong.html', 'Namdong', 
+                'width=570, height=800, location=left, status=no, scrollbars=yes, top=150px, left=1000px');
+            }
+            function OngjinClick(){
+                window.open('Ongjin.html', 'Ongjin', 
+                'width=570, height=800, location=left, status=no, scrollbars=yes, top=150px, left=1000px');
+            }
+            function YeonsuClick(){
+                window.open('Yeonsu.html', 'Yeonsu', 
+                'width=570, height=800, location=left, status=no, scrollbars=yes, top=150px, left=1000px');
+            }
+            function SeoClick(){
+                window.open('Seo.html', 'Seo', 
+                'width=570, height=800, location=left, status=no, scrollbars=yes, top=150px, left=1000px');
+            }
+
+
+            
+
+        </script>
+
+</body>
+</html>
+
